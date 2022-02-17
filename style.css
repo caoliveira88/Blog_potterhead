@@ -62,13 +62,16 @@ body {
 }
 
 .character-content {
+    margin: auto;
     display:flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 100px;
 }
 
 .funko {
-    width: 20%;
+    max-width: 300px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +79,8 @@ body {
 }
 
 .funko-text {
-    width: 30%;
+    max-width: 500px;
+    width: 90%;
     flex-direction: column;
     padding: 10px;
     padding-top: 30px;
@@ -114,4 +118,15 @@ p {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 769px) {
 
+    .character-content {
+       flex-direction: column;
+    }
+
+    .character-column{
+        flex-direction: column-reverse;
+    }
+
+
+}
