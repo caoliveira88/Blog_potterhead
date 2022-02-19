@@ -142,6 +142,7 @@ p {
   }
 
   h1 {
+    width: 100%;
     padding: 20px 0 50px 30px;
     font-size: 5rem;
     display: flex;
@@ -151,16 +152,15 @@ p {
 
   .menu {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+
   }
 
   .menu li a {
     font-size: 1rem;
  
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
   }
 
   .footer-info p{
