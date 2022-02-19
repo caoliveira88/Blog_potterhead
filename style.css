@@ -50,6 +50,14 @@ body {
   transition: 0.3s;
 }
 
+h1 {
+  padding-bottom: 50px;
+  color: #4b3621;
+  flex-wrap: wrap;
+  font-size: 6rem;
+  width: 300px;
+}
+
 .principal-content {
   width: 80%;
   margin: auto;
@@ -83,13 +91,6 @@ body {
   place-content: center;
 }
 
-h1 {
-  padding-bottom: 50px;
-  color: #4b3621;
-  flex-wrap: wrap;
-  font-size: 6rem;
-  width: 300px;
-}
 
 h2 {
   font-family: "Yeseva One", cursive;
