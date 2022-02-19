@@ -62,5 +62,108 @@ h1 {
   flex-wrap: wrap;
   font-size: 6rem;
   width: 70%;
-  
+}
+
+.principal-content {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.character-content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.funko {
+  max-width: 300px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.funko-text {
+  max-width: 500px;
+  width: 90%;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 30px;
+  place-content: center;
+}
+
+h2 {
+  font-family: "Yeseva One", cursive;
+  font-size: 1.2rem;
+  color: #4b3621;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  background: #fb5;
+  padding: 5px 0 5px 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  background: #fb5;
+  padding: 20px;
+  width: 70%;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: right;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4b3621;
+}
+
+@media screen and (max-width: 769px) {
+  .character-content {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .character-column {
+    flex-direction: column-reverse;
+  }
+
+  .principal-content {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+    padding: 20px 0 50px 30px;
+    font-size: 5rem;
+    display: flex;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  .menu li a {
+    font-size: 1rem;
+  }
+
+  .footer-info p {
+    width: 100%;
+    justify-content: center;
+    border-radius: 0;
+  }
 }
