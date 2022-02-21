@@ -18,7 +18,7 @@ body {
 
 .menu {
   margin-bottom: 5rem;
-  background: #fb5;
+  background: rgb(170, 103, 190);
   width: 70%;
   right: 0;
   position: absolute;
@@ -102,7 +102,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
-  background: #fb5;
+  background: rgb(170, 103, 190);
   padding: 5px 0 5px 5px;
   text-align: center;
   border-radius: 5px;
@@ -116,7 +116,7 @@ p {
 }
 
 .footer-info p {
-  background: #fb5;
+  background: rgb(170, 103, 190);
   padding: 20px;
   width: 70%;
   border-radius: 0 5px 5px 0;
@@ -126,6 +126,14 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   color: #4b3621;
+  align-items: center;
+}
+
+.footer-info a{
+  font-size: 2.4rem;
+  margin-left: 15px;
+  color: #4b3621;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 769px) {
