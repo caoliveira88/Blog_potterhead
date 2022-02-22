@@ -9,6 +9,10 @@
 body {
   background-color: #faf6ed;
   padding: 40px 0 40px 0;
+  background-image: url(image/ESTAMPA.png) ;
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
 }
 
 .menu-container {
@@ -34,7 +38,6 @@ body {
 .menu li a {
   display: block;
   padding: 10px;
-  margin-right: 10px;
   color: #4b3621;
   text-decoration: none;
   font-family: "Yeseva One", cursive;
@@ -55,7 +58,8 @@ h1 {
   color: #4b3621;
   flex-wrap: wrap;
   font-size: 6rem;
-  width: 60%;
+  width: 90%;
+  max-width: 800px;
   
 }
 
@@ -64,6 +68,11 @@ h1 {
   margin: auto;
   padding-top: 40px;
 }
+
+section a {
+  margin-bottom: 200px;
+}
+
 
 .character-content {
   margin: auto;
@@ -116,13 +125,13 @@ p {
 
 .footer-info p {
   background: #fb5;
-  padding: 20px;
+  padding: 10px;
   width: 70%;
   border-radius: 0 5px 5px 0;
   display: flex;
   justify-content: right;
   font-family: "Yeseva One", cursive;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #4b3621;
   align-items: center;
@@ -133,6 +142,34 @@ p {
   margin-left: 15px;
   color: #4b3621;
   cursor: pointer;
+}
+
+.footer-info a:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.js-scroll {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+
+.js-scroll2 {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(30px, 0, 0);
+}
+
+.js-scroll2.ativo {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 0);
 }
 
 @media screen and (max-width: 769px) {
@@ -172,5 +209,39 @@ p {
     width: 100%;
     justify-content: center;
     border-radius: 0;
+  }
+  .js-accordion p {
+    display: none;
+  }
+
+  .js-accordion h2::after {
+    content: '↴';
+    padding-left: 10px;
+  }
+
+  .js-accordion h2.ativo::after {
+    content: '⬏';
+    padding-left: 10px;
+  }
+
+  .js-accordion p.ativo {
+    display: block;
+    margin-bottom: 250px;
+    animation: slideDown 0.8s forwards;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+
+    to {
+      opacity: 1;
+      max-height: 150px;
+    }
+  }
+  h2 {
+    cursor: pointer;
   }
 }
