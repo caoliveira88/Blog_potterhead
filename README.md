@@ -20,3 +20,5 @@ Adicionar botão de compra na página livros, para direcionar a sites que comerc
 - ``Responsividade``
 - ``VS Code IDEA``
 
+## Deploy
+https://caoliveira88.github.io/Pagina_potterhead/
