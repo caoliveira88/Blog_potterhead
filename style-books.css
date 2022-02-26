@@ -9,8 +9,9 @@
 body {
   background-color: #faf6ed;
   padding: 40px 0 40px 0;
-  background-image: url(image/ESTAMPA.png);
+  background-image: url(image/ESTAMPA.png) ;
   background-size: cover;
+  background-position: cover;
   background-attachment: fixed;
 }
 
@@ -21,7 +22,7 @@ body {
 
 .menu {
   margin-bottom: 5rem;
-  background: rgb(170, 103, 190);
+  background: #fb5;
   width: 70%;
   right: 0;
   position: absolute;
@@ -53,20 +54,14 @@ body {
   transition: 0.3s;
 }
 
-.principal-content {
-  width: 80%;
-  margin: auto;
-  padding-top: 40px;
-}
-
 h1 {
   padding-bottom: 50px;
   color: #4b3621;
   flex-wrap: wrap;
-  word-wrap: unset;
   font-size: 6rem;
   width: 90%;
-  max-width: 900px;
+  max-width: 800px;
+  
 }
 
 .principal-content {
@@ -74,6 +69,11 @@ h1 {
   margin: auto;
   padding-top: 40px;
 }
+
+section a {
+  margin-bottom: 200px;
+}
+
 
 .character-content {
   margin: auto;
@@ -84,6 +84,8 @@ h1 {
 }
 
 .funko {
+  max-width: 300px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,15 +102,19 @@ h1 {
 
 h2 {
   font-family: "Yeseva One", cursive;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #4b3621;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
-  background: rgb(170, 103, 190);
+  background: #fb5;
   padding: 5px 0 5px 5px;
   text-align: center;
   border-radius: 5px;
+}
+
+.book {
+  font-size: 1rem;
 }
 
 p {
@@ -119,14 +125,14 @@ p {
 }
 
 .footer-info p {
-  background: rgb(170, 103, 190);
+  background: #fb5;
   padding: 10px;
   width: 70%;
   border-radius: 0 5px 5px 0;
   display: flex;
   justify-content: right;
   font-family: "Yeseva One", cursive;
-  font-size: 1 rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #4b3621;
   align-items: center;
@@ -199,7 +205,7 @@ p {
   }
 
   .menu li a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .footer-info p {
@@ -223,7 +229,7 @@ p {
 
   .js-accordion p.ativo {
     display: block;
-    margin-bottom: 260px;
+    margin-bottom: 200px;
     animation: slideDown 0.8s forwards;
   }
 
@@ -250,7 +256,7 @@ p {
 
   .js-accordion p.ativo {
    
-    margin-bottom: 320px;
+    margin-bottom: 450px;
     
   }
 
@@ -271,19 +277,4 @@ p {
   
   }
 
-  .funko-camara {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .funko-camara img {
-    width: 80%;
-
-  }
-
-
-
- 
-  
 }

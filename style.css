@@ -45,6 +45,7 @@ body {
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 
 .menu li a:hover {
@@ -187,11 +188,13 @@ p {
   }
 
   h1 {
+    max-width: 500px;
+    margin: auto;
     width: 100%;
-    padding: 20px 0 50px 30px;
-    font-size: 5rem;
+    font-size: 3.8rem;
     display: flex;
     text-align: center;
+    justify-content: center;
   }
 
   .menu {
@@ -226,7 +229,7 @@ p {
 
   .js-accordion p.ativo {
     display: block;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     animation: slideDown 0.8s forwards;
   }
 
@@ -244,4 +247,34 @@ p {
   h2 {
     cursor: pointer;
   }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .js-accordion p.ativo {
+   
+    margin-bottom: 320px;
+    
+  }
+
+  .footer-info p{
+
+    font-size: 1rem;
+    text-align: center;
+    
+    
+  }
+
+  .footer-info a {
+    margin-right: 15px;
+  }
+  .menu li a {
+
+    font-size: 0.8rem;
+  
+  }
+
 }
