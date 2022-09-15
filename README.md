@@ -15,8 +15,8 @@ Adicionar botão de compra na página livros, para direcionar a sites que comerc
 - ``HTML``
 - ``CSS``
 - ``JavaScrit``
-- ``Accordion-list``
-- ``Animation-Scroll``
+- ``Função Accordion-list``
+- ``Função Animation-Scroll``
 - ``Responsividade``
 - ``VS Code IDEA``
 
